@@ -6,7 +6,8 @@
 var Client = require('azure-iothub').Client;
 var Message = require('azure-iot-common').Message;
 
-var connectionString = 'IOTHUB-CONN-STRING';
+// define a CUSTOM Connection String in Azure Web App and name it IOTHUB_CONN_STR
+var connectionString = process.env.CUSTOMCONNSTR_IOTHUB_CONN_STR;
 var targetDevice = 'Mega';
 
 var client = Client.fromConnectionString(connectionString);
