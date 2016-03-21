@@ -15,5 +15,5 @@ $ sudo pip install blessings
 
 ### Start listening
 ```bash
-$ sudo ./listen
+$ sudo ./listen.sh
 ```
